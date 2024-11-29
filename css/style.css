@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+/*colors*/
+
+
+--Purple-100: hsl(254, 88%, 90%);
+--Purple-500: hsl(256, 67%, 59%);
+
+--Yellow-100: hsl(31, 66%, 93%);
+--Yellow-500: hsl(39, 100%, 71%);
+
+--White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 7%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    background-color: rgb(229, 227, 231);
+    margin-block: 30px;
+}
+
+
+
+.container {
+    width: 80%;
+    display: grid;
+    grid-auto-columns:  1fr;
+    grid-auto-rows:  100px;
+    grid-template-areas:
+    "box1 box2 box2 box3"
+    "box1 box2 box2 box3"
+    "box1 box2 box2 box3"
+    "box1 box2 box2 box3"
+    "box1 box4 box5 box3"
+    "box6 box4 box5 box3"
+    "box6 box4 box5 box3"
+    "box6 box7 box8 box8"
+    "box6 box7 box8 box8"
+    "box6 box7 box8 box8"
+    ;
+    gap: 30px;
+    margin: auto;
+}
+
+.container .box{
+    border-radius: 10px;
+}
+/*=======================box1=====================*/
+.container .box:nth-child(1){
+    grid-area: box1;
+    background-color: var(--Yellow-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: last baseline;
+    text-align: left;
+    padding: 6rem ;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1;
+    
+}
+
+.container .box:nth-child(1) span{
+    color: var(--Purple-500);
+}
+.container .box:nth-child(1) img{
+    margin-top: 20px;
+}
+
+/*=====================box2======================*/
+.container .box:nth-child(2){
+    grid-area: box2;
+    background-color: var(--Purple-500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--White);
+    line-height: 1;
+    text-align: center;
+}
+.container .box:nth-child(2) span{
+    color: var(--Yellow-500);
+}
+.container .box:nth-child(2) img{
+    margin-block: 20px 10px;
+    width: 40%;
+}
+
+/*=====================box3======================*/
+.container .box:nth-child(3){
+    grid-area: box3;
+    background-color: var(--Purple-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: last baseline;
+    line-height: 1.02;
+    padding: 50px 0 50px 50px;
+    overflow: hidden;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight:600;
+}
+.container .box:nth-child(3) h2{
+    font-size: 2.12rem ;
+    font-weight: 700;
+    text-align: left;
+    
+}
+
+.container .box:nth-child(3) img{
+    object-fit: cover;
+    position: relative;
+    height: 400px;
+    object-position: left;
+    left: 22px;
+    margin-block: -80px;
+   
+}
+
+/*=====================box4======================*/
+.container .box:nth-child(4){
+    grid-area: box4;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    gap: 30px;
+}
+.container .box:nth-child(4) h2{
+    font-size: 2.12rem ;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1;
+    
+}
+
+.container .box:nth-child(4) img{
+   
+    position: relative;
+    object-fit: cover;
+    height: 85px;
+    object-position: left;
+    right: -63px;
+}
+/*=====================box5======================*/
+
+.container .box:nth-child(5){
+    grid-area: box5;
+    background-color: var(--Yellow-500);
+    padding: 30px 30px 0;
+    overflow: hidden;
+}
+.container .box:nth-child(5) img{
+    position: relative;
+    bottom: -60px;
+}
+.container .box:nth-child(5) h2{
+    font-size: 2.12rem ;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1;
+    
+}
+
+
+/*=====================box6======================*/
+.container .box:nth-child(6){
+    grid-area: box6;
+    background-color: var(--Yellow-500);
+   
+}
+.container .box:nth-child(7){
+    grid-area: box7;
+    background-color: var(--White);
+}
+.container .box:nth-child(8){
+    grid-area: box8;
+    background-color: var(--Purple-500);
+}
+
+
