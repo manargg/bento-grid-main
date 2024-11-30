@@ -536,4 +536,11 @@ footer .attribution{
     width: 50%;
 }
 
+
+footer .attribution{
+    margin: 30px auto;
+    text-align: center;
+    font-size: 12px;
+}
+
 }
