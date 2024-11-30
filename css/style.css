@@ -446,6 +446,34 @@ body{
     .container .box:nth-child(2){
         height: 300px;
     }
+/*=====================box4======================*/
+.container .box:nth-child(4){
+    grid-area: box4;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    gap: 20%;
+    padding: 20px;
+    height: 200px;
+}
+.container .box:nth-child(4) h2{
+    width: 100%;
+}
+
+
+.container .box:nth-child(4) img{
+   
+    object-fit: contain;
+
+
+    
+}
+
    /*=====================box5======================*/
 
    .container .box:nth-child(5){
