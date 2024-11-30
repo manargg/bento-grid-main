@@ -225,6 +225,12 @@ body{
 }
 
 
+footer .attribution{
+    margin: 30px auto;
+    text-align: center;
+}
+
+
 /*============================================
                      media query
 ==============================================*/
